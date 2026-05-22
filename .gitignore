@@ -1,3 +1,19 @@
-venv
+# Python
+__pycache__/
+*.pyc
+venv/
 .env
-Network_data
+
+# Logs and Data
+logs/
+artifacts/
+
+# DVC (Keep the .dvc/ folder, but ignore the contents)
+.dvc/
+.dvc/tmp/
+.dvc/cache/
+
+# OS/IDE
+.DS_Store
+.idea/
+.vscode/

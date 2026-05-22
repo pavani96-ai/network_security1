@@ -30,9 +30,10 @@ def get_requirements()->List[str]:
     return requirement_lst
 
 setup(
-    name="NetworkSecurity",
+    name="networksecurity",
     version="0.0.1",
     author="Pavani kusuma",
     author_email="pavanikusuma2020@gmail.com",
-    packages=find_packages(),
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     install_requires=get_requirements())

@@ -18,4 +18,3 @@ Flask-cors
 dagshub
 certifi
 dvc
--e .
