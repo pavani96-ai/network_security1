@@ -18,4 +18,5 @@ Flask-cors
 dagshub
 certifi
 dvc
+dvc-S3
 -e .

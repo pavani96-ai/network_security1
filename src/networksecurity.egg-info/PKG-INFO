@@ -23,6 +23,7 @@ Requires-Dist: Flask-cors
 Requires-Dist: dagshub
 Requires-Dist: certifi
 Requires-Dist: dvc
+Requires-Dist: dvc-S3
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist
