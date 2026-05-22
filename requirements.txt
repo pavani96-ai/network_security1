@@ -1,0 +1,21 @@
+python-dotenv
+pymango
+pymongo[srv]==3.12
+pandas
+mlflow
+notebook
+numpy
+scikit-learn
+matplotlib
+python_box
+pyYaml
+tqdm
+ensure
+joblib
+types_pyYaml
+Flask
+Flask-cors
+dagshub
+certifi
+
+#e .
