@@ -130,6 +130,18 @@ def load_bin(path:Path) -> Any:
         raise NetworkSecurityException(e, sys)
 
 @ensure_annotations
-def save_data(data: pd.DataFrame, path: str):
+def save_data(data: pd.DataFrame, path: Path):
     data.to_csv(path, index=False, header=True)
     logger.info(f"Data saved to: {path}")
+
+
+def write_yaml_file(file_path: Path, content: object, replace: bool = False) -> None:
+    try:
+        if replace:
+            if os.path.exists(file_path):
+                os.remove(file_path)
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, "w") as file:
+            yaml.dump(content, file)
+    except Exception as e:
+        raise NetworkSecurityException(e, sys)

@@ -2,7 +2,7 @@ artifacts_root: artifacts
 
 data_ingestion:
   # The base folder name for this component
-  root_dir: data_ingestion
+  root_dir: artifacts/data_ingestion
   
   # File names used by the DataIngestion component
   feature_store_file_name: feature_store.csv
@@ -12,3 +12,14 @@ data_ingestion:
   # Configuration parameters
   collection_name: PhishingData
   database_name: NetworkSecurityDB
+
+
+data_validation:
+  root_dir: data_validation
+  validated_dir: validated
+  invalid_dir: invalid
+  drift_report_dir: drift_report
+  drift_report_file_name: report.yaml
+  valid_train_file_name: train.csv
+  valid_test_file_name: test.csv
+  STATUS_FILE: status.txt

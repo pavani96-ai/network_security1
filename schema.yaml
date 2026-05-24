@@ -6,7 +6,7 @@ COLUMNS:
   double_slash_redirecting: int64
   Prefix_Suffix: int64
   having_Sub_Domain: int64
-  SSLFinal_State: int64
+  SSLfinal_State: int64
   Domain_registeration_length: int64
   Favicon: int64
   port: int64

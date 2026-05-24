@@ -19,3 +19,5 @@ dagshub
 certifi
 dvc
 dvc-S3
+dill
+pyyaml
